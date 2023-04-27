@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.shilpa.controller.MyControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 1.844 s <<< FAILURE! - in com.shilpa.controller.MyControllerTest
+testGetStudentsInteger  Time elapsed: 0.188 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at com.shilpa.controller.MyControllerTest.testGetStudentsInteger(MyControllerTest.java:14)
+
+testUpdateStudent  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at com.shilpa.controller.MyControllerTest.testUpdateStudent(MyControllerTest.java:29)
+
+testGetStudentsStudent  Time elapsed: 0.016 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at com.shilpa.controller.MyControllerTest.testGetStudentsStudent(MyControllerTest.java:24)
+
+testGetStudents  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at com.shilpa.controller.MyControllerTest.testGetStudents(MyControllerTest.java:19)
+
+testDeleteStudent  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at com.shilpa.controller.MyControllerTest.testDeleteStudent(MyControllerTest.java:34)
+
