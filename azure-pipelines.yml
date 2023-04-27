@@ -24,7 +24,7 @@ steps:
       sonar.projectKey=shilpa0651_Spring-Boot-Test
       sonar.projectName=Spring-Boot-Test
 
-- task: Maven@1
+- task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
