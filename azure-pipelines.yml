@@ -23,7 +23,7 @@ steps:
       # sonar.exclusions=**/*.bin
       sonar.projectKey=shilpa0651_Spring-Boot-Test
       sonar.projectName=Spring-Boot-Test
-  
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -34,7 +34,17 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-    
+
+- task: CopyFiles@2
+  inputs:
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+- task: PublishBuildArtifacts@1
+
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'  
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
