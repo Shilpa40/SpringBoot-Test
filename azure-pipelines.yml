@@ -35,12 +35,17 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
+    
 - task: SonarCloudAnalyze@1
 
 - task: CopyFiles@2
   inputs:
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
+
 - task: PublishBuildArtifacts@1
 
   inputs:
