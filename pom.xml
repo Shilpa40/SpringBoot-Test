@@ -16,6 +16,10 @@
 	<description>Demo project for Shilpa</description>
 	<properties>
 		<java.version>1.8</java.version>
+		 <!--     Sonarcloud-->
+        	<sonar.projectKey>shilpa0651_Spring-Boot-Test</sonar.projectKey>
+        	<sonar.organization>shilpa0651</sonar.organization>
+        	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
 		<dependency>
