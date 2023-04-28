@@ -34,6 +34,7 @@ steps:
     publishJUnitResults: false
     sonarQubeRunAnalysis: true
     goals: 'clean package'
+    codeCoverageToolOption: JaCoCo
 
 - task: PublishTestResults@2
   inputs:
