@@ -49,8 +49,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(build.sourcesdirectory)'
-    Contents: 'target/*.jar'
+    Contents: '**/*.jar'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
