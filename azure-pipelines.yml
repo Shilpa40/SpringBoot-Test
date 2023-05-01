@@ -58,3 +58,9 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'  
 
+- task: Docker@2
+  inputs:
+    containerRegistry: 'Docker Hub'
+    repository: 'spring-boot-test-image'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
