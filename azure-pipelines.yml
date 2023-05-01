@@ -46,10 +46,12 @@ steps:
   inputs:
     pollingTimeoutSec: '300'
 
+
 - task: CopyFiles@2
   inputs:
-    Contents: '**/*.jar'
-    TargetFolder: '$(build.artifactstagingdirectory)'
+    SourceFolder: '$(build.sourcesdirectory)'
+    Contents: 'target/*.jar'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
 
